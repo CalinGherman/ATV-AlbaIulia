@@ -27,9 +27,7 @@ let displayImg = function(number){
 // }
 galleryImg.forEach(function(img, i){
 img.addEventListener('click', function(){
-    displayImg(i)  
-    console.log(img);
-    console.log(i); 
+    displayImg(i);
 })
 })
 imgRight.addEventListener('click', function(){
@@ -58,4 +56,34 @@ overlay.addEventListener('click', function(){
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
 })
+
+
+const footer = document.querySelector('.footer');
+console.log(footer);
+const div = document.createElement("div");
+console.log(div);
+div.textContent = 'calin';
+
+footer.append(div)
+
+// Scrolling Button
+
+const scrollBtn = document.querySelector('.topButton');
+const scrollingTo = document.querySelector('.scroll--to-top');
+
+scrollBtn.addEventListener('click', function(e){
+    e.preventDefault();
+
+    //Get directions to where to scroll:
+    const coords = scrollingTo.getBoundingClientRect();
+    window.scrollTo({
+        top: coords.top + window.pageYOffset,
+        left: coords.left + window.pageXOffset,
+        behavior: 'smooth'
+    })
+})
+
+
+
+
 
