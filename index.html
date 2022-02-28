@@ -30,11 +30,12 @@
 
   gtag('config', 'UA-169883661-2');
 </script>
+
   </head>
 
-  <body class="container--home" id="top">
+  <body class="container--home " id="top" >
 
-    <div class="header ">
+    <div class="header" >
 
       <div class="header__logo">
         <div class="logo-container">
@@ -104,7 +105,7 @@
         <h4 class="info__card-3--price">
           De ziua ta primesti 15% reducere la toate preturile din partea noastra!!!
         </h4>
-        <a class="info__card-3--button" href="#oferta">Afla despre oferta</a>
+        <a class="info__card-3--button" href="">Afla despre oferta</a>
       </div>
     </div>
 
@@ -118,11 +119,20 @@
 
 <!-- ---------------------     ABOUT   ------------------------ -->
 
-    <div class="about">
-      <iframe class="index__videos"  src="img/video2.mp4">
+    <div class="about section">
+      <!-- <iframe class="index__videos"  src="img/video2.mp4">
       </iframe>
       <iframe class="index__videos"  src="img/video1.mp4">
-      </iframe>
+      </iframe> -->
+      <video src="img/video2.mp4" data-video="no-play" id="video1" class="index__videos"></video>
+      <video src="img/video1.mp4" data-video="no-play"  id="video2" class="index__videos"></video>
+
+      <!-- <video  class="index__video">
+        <source src="img/video2.mp4" type="video/mp4">
+      </video>
+      <video  class="index__video">
+        <source src="img/video1.mp4" type="video/mp4">
+      </video> -->
     </div>
 
 
@@ -131,7 +141,7 @@
 
 
 
-    <div class="oferta" id="oferta">
+    <div class="oferta section" id="oferta">
 
 <!--     ------------   OFER MAIN  ---------- -->
 
@@ -151,8 +161,7 @@
 
           <p class="oferta__secondary-weekdays--text">
             Daca doriti sa inchiriati un ATV in timpul saptamanii, pretul va fi de 600 RON pe o zi intreaga, iar daca doriti sa inchiriati pe doua sau mai multe ore, pretul va fi de 130 RON pe ora.
-            <!-- Daca doriti sa inchiriati in timpu saptamanii, pretul pe o zi intreaga este de 600 RON/h, sau daca doriti sa le inchiriati pe ora, pretul va fi de 130 RON/h.
-            In timpul saptamanii aveti reducere la servicile de inchirieri ATV de pana la 10% daca doriti sa le inchiriati pentru o zi intreaga, sau daca doriti sa le inchiriati pe ora, pretul va fi de 130 RON/h. -->
+      
           </p>
       
 
@@ -193,7 +202,7 @@
 
     <!-- ---------------     PICTURES ---------------------------- -->
 
-    <div class="pictures">
+    <div class="pictures section">
 
       <figure class="pictures__item pictures__item--1"><img src="img/img-pictures-1.jpeg" alt="pictures image 1" class="pictures__img"></figure>
 
@@ -226,7 +235,7 @@
     </div>
 
     <!--     ---------------------   FOOTER   -------------- -->
-    <footer class="footer">
+    <footer class="footer section" id="apasa">
       <div class="footer__contact">
 
         <div class="footer__contact-title">Contact</div>
@@ -250,6 +259,10 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.6784499539162!2d23.550874915637806!3d46.07745240033398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474ea7d5b6ba4883%3A0xf43abc8384995a97!2sStrada%20Mircea%20Eliade%2C%20Alba%20Iulia%2C%20Romania!5e0!3m2!1sen!2suk!4v1637424308509!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </footer>
-    <a href="#top" class="topButton">Top</a>
+    <a href=""  class="topButton">Top</a>
+   
   </body>
+  <script src="index.js"></script>
+
 </html>
+
