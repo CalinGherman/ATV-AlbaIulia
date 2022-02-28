@@ -30,6 +30,11 @@ img.addEventListener('click', function(){
     displayImg(i);
 })
 })
+
+
+
+
+
 imgRight.addEventListener('click', function(){
     if(theIndex < galleryImg.length){
         theIndex++
@@ -58,29 +63,15 @@ overlay.addEventListener('click', function(){
 })
 
 
-const footer = document.querySelector('.footer');
-console.log(footer);
-const div = document.createElement("div");
-console.log(div);
-div.textContent = 'calin';
+//Scrolling to Top
 
-footer.append(div)
-
-// Scrolling Button
 
 const scrollBtn = document.querySelector('.topButton');
 const scrollingTo = document.querySelector('.scroll--to-top');
 
-scrollBtn.addEventListener('click', function(e){
+scrollBtn.addEventListener('click', function(e) {
     e.preventDefault();
-
-    //Get directions to where to scroll:
-    const coords = scrollingTo.getBoundingClientRect();
-    window.scrollTo({
-        top: coords.top + window.pageYOffset,
-        left: coords.left + window.pageXOffset,
-        behavior: 'smooth'
-    })
+    scrollingTo.scrollIntoView({behavior: 'smooth'});
 })
 
 
